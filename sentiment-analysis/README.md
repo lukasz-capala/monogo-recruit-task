@@ -8,6 +8,13 @@ Zainstaluj zależności przy użyciu `npm install`. Następnie wykonaj w termina
 npm run dev -- --open
 ```
 
+## Testowanie
+
+```bash
+npm run test
+```
+
+
 ## Budowanie
 
 ```bash
