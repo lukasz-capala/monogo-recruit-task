@@ -1,0 +1,30 @@
+@use 'sass:map';
+
+:root {
+    --primary-color: rgb(94, 171, 132);
+    --primary-color-600: rgb(50, 81, 57);
+    --shadow: rgba(24, 48, 30, 0.7);
+    --accent-color: #fffc3f;
+    --text-color: #f6ffcc;
+    --text-color-100: #ffffff;
+    --text-color-alt: #0c160e;
+    --invalid: #ff5757;
+}
+
+$colors: (
+    primary: var(--primary-color),
+    accent: var(--accent-color),
+    text: var(--text-color),
+    text-bright: var(--text-color-100),
+    invalid: var(--invalid),
+    frame-body: var(--primary-color-600),
+    button-bg: var(--accent-color),
+    button-text: var(--text-color-alt),
+    input-text: var(--text-color-alt),
+    shadow: var(--shadow)
+);
+
+@function use-color($color-name) {
+    @return map.get($colors, $color-name);
+}
+

@@ -1,0 +1,8 @@
+@use '@/scss/colors' as colors;
+@use '@/scss/variables' as variables;
+
+@mixin frame {
+    background-color: colors.use-color(frame-body);
+    border-radius: var(--radius-default);
+    padding: var(--padding-default);
+}

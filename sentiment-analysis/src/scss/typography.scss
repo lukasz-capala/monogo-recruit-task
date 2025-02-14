@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+@mixin font-family {
+	font-family: 'Catamaran';
+}
+
+@mixin font-default-gutter {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin heading-1 {
+	@include font-family;
+	@include font-default-gutter;
+	font-size: 4rem;
+	font-weight: 800;
+	line-height: 5.2rem;
+}
+
+@mixin heading-3 {
+	@include font-family;
+	@include font-default-gutter;
+	font-size: 3rem;
+	line-height: 4rem;
+
+	font-weight: 500;
+}
+
+@mixin paragraph {
+	@include font-family;
+	@include font-default-gutter;
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+@mixin form-control-text {
+	@include font-family;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+@mixin small {
+    @include font-family;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
